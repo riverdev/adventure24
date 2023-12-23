@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { Comp1Component } from './comp1/comp1.component';
+import { Comp1Component } from './pages/comp1/comp1.component';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +11,4 @@ import { Comp1Component } from './comp1/comp1.component';
 })
 export class AppComponent {
   title = 'sandbox';
-  appcompProperty = "Hello from APP component";
-
-  onClick(){}
 }
