@@ -15,8 +15,8 @@ export class Comp1Component {
   ){}
 
 
-  onClickHome(){
-    console.log("Clicked home");
+  onClickedGoHome(){
+    console.log("Clicked to navigate back to home");
     this.router.navigateByUrl('/');
   }
 
