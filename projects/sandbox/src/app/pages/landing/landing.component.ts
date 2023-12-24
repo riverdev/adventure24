@@ -1,18 +1,27 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { MyLibraryService, CountriesInterface, MyLibraryComponent} from 'my-library';//'../../../../../my-library/src/public-api';
 
 @Component({
   selector: 'app-landing',
   standalone: true,
-  imports: [],
+  imports: [MyLibraryComponent],
   templateUrl: './landing.component.html'
 })
 export class LandingComponent {
   landingProperty = "This is landing page";
+  //listOfCountries!: CountriesInterface[];
 
   constructor(
     private router: Router,
+    private mylibraryService: MyLibraryService,
   ){}
+
+  ngOnInit(){
+    this.mylibraryService.getCountries().subscribe(
+      res => console.log(res)
+    );
+  }
 
   onClick() {
     console.log("Clicked comp1");
