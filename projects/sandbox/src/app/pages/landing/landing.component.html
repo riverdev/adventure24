@@ -2,6 +2,13 @@
   <p>landing works!</p>
   <h2>Value is : {{ landingProperty }}</h2>
 
+  @for (item of listOfCountries; track $index) {
+    <ul>
+      <li>{{item.name}}</li>
+    </ul>
+  } @empty {
+   <p>List is empty</p>
+  }
   <button (click)="onClick()">Comp1</button>
   <lib-my-library></lib-my-library>
   </div>

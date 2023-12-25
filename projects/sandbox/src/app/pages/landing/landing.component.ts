@@ -15,6 +15,7 @@ import {
 export class LandingComponent {
   landingProperty = 'This is landing page';
   listOfCountries!: CountriesInterface[];
+  myTempList: string[] = ["1", "2", "a", "b"];
 
   constructor(
     private router: Router,
