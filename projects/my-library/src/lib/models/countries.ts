@@ -6,5 +6,6 @@ export interface CountriesInterface {
   code_numeric: number;  // 124=Canada, 840=United States
   name: string;
   price_usd: number;
-  highlight_points: string[],
+  highlight_points: string[];
+  image_flag: string;
 }
