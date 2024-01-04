@@ -250,7 +250,7 @@
               "projects/playground/src/favicon.ico",
               "projects/playground/src/assets"
             ],
-            "styles": [
+            "styles": ["projects/playground/src/custom-theme.scss",
               "projects/playground/src/styles.scss"
             ],
             "scripts": []
