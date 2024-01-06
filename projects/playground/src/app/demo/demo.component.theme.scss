@@ -1,0 +1,11 @@
+@use '@angular/material' as mat;
+
+@mixin app-demo-mixin($theme) {
+  $theme-colors: mat.get-color-config($theme);
+  $success-color: map-get($theme, success);
+  $background-color: mat.get-color-from-palette($success-color, darker);
+
+ app-demo {
+    background-color: $background-color;
+  }
+}
